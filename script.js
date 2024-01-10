@@ -1,5 +1,4 @@
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
   if (playerSelection == "rock" && computerSelection == "Paper") {
     comWon++;
     return "You lose! Paper beats Rock!"
@@ -28,15 +27,16 @@ function getComputerChoice() {
   return arr[Math.floor(Math.random()*3)];
 }
 
-function getPlayerSelction() {
-  let choice = prompt("Please choose Rock, Paper or Scissors:", "");
-  choice = choice.toLowerCase();
-  if (choice == "rock" || choice == "paper" || choice == "scissors") {
-    return choice;
-  } else {
-    alert("You need to enter Rock, Paper or Scissors! Try again");
-    getPlayerSelction();
-  }
+const rock = document.querySelector("#Rock");
+const paper = document.querySelector("#Paper");
+const scissors = document.querySelector("Scissors");
+
+rock.addEventListener("ckick", getPlayerSelction(this.id))
+paper.addEventListener("ckick", getPlayerSelction(this.id))
+scissors.addEventListener("ckick", getPlayerSelction(this.id))
+
+function getPlayerSelction(playerSelection) {
+  return playerSelection.toLowerCase();
 }
 
 let playerWon = 0;
