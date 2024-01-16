@@ -1,0 +1,251 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: #1f2937;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+}
+
+.link {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    color: #e5e7eb;    
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.link a {
+    text-decoration: none;
+    color: #e5e7eb;    
+    font-size: 18px;
+}
+
+.top {
+    background-color: #1f2937;
+    display: flex;
+    padding: 100px 300px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.topleft {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+    gap: 20px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.second {
+    font-size: 18px;
+    color: #e5e7eb;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.rec {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.top .btn {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    flex: 0 0 auto;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 300px;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+    margin-bottom: 100px;
+}
+
+.sub {
+    display: flex;
+    align-items: first baseline;
+    gap: 50px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.text {
+    line-height: 1.4;
+}
+
+.square {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 100px 300px;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 1224px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    line-height: 1.4;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.window {
+    padding: 100px 300px;
+}
+
+.bluewindow {
+    background-color: #3882f6;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+}
+
+.windowleft {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    color: #e5e7eb;   
+}
+
+.head {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  background: #3882f6;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn:after {
+  z-index: -1;
+  border: 0.6px solid #e5e7eb;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3882f6;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;    
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
